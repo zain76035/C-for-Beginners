@@ -1,0 +1,195 @@
+--PROGRAM 1
+#include<iostream>
+using namespace std;
+void display(void);
+main()
+{
+	cout<<"Calling Function"<<endl;
+	display();
+	cout<<"Again Calling..."<<endl;
+	display();
+	system("pause");
+}
+
+void display(void)
+{
+	cout<<"Hello World!"<<endl;
+	cout<<"Welcome"<<endl;
+}
+
+
+--PROGRAM 2
+#include<iostream>
+using namespace std;
+void profile(void);
+void campus(void);
+main()
+{
+	campus();
+	profile();
+	profile();
+	campus();
+	system("pause");
+}
+
+void profile(void)
+{
+	cout<<"Name: S.M Zain-ul-abideen"<<endl;
+	cout<<"ID: 9625"<<endl;
+	cout<<"Email: zain76035@gmail.com"<<endl;
+	cout<<"0336-1824093"<<endl;
+}
+void campus(void)
+{
+	cout<<"Iqra University"<<endl;
+	cout<<"North Campus"<<endl;
+	cout<<"North Karachi"<<endl;
+}
+
+
+--PROGRAM 3
+#include<iostream>
+using namespace std;
+void sum(int ,int );
+main()
+{
+	int x=5,y=10;
+	int a,b;
+	cout<<"Enter 2 ints ";
+	cin>>a>>b;
+	sum(b,a);
+	sum(x,y);
+	sum(a,x);
+	sum(10,100);
+	system("pause");
+}
+void sum(int a,int b)
+{
+	int s;
+	s=a+b;
+	cout<<"Sum is "<<s<<endl;
+}
+
+
+--PROGRAM 4
+#include<iostream>
+using namespace std;
+void product(int ,int ,int );
+void dou(int );
+main()
+{
+	int a,b,c,d;
+	cout<<"Press 1 for product:"<<endl;
+	cout<<"Press 2 for Double:"<<endl;
+	cin>>a;
+	if(a==1)
+	{
+		cout<<"Enter 3 values: "<<endl;
+		cin>>b>>c>>d;
+		product(b,c,d);
+	}
+	else if(a==2)
+	{
+		cout<<"ENter any Value: ";
+		cin>>b;
+		dou(b);
+	}
+	
+}
+void product(int a,int b,int c)
+{
+	int p;
+	p=a*b*c;
+	cout<<"Product of Values ="<<p<<endl;
+}
+void dou(int x)
+{
+	int d;
+	d=x*2;
+	cout<<"Double of Value = "<<d<<endl;
+}
+
+
+--PROGRAM 5
+#include<iostream>
+using namespace std;
+void vowel(char );
+void no(int );
+main()
+{
+	int a,b;
+	cout<<"1 for Character.."<<endl;
+	cout<<"2 for Ints.."<<endl;
+	cin>>a;
+	if(a==1)
+	{
+		cout<<"Enter any Character: ";
+		cin>>b;
+		vowel(b);
+	}
+	else if(a==2)
+	{
+		cout<<"Enter any Ints: ";
+		cin>>b;
+		no(b);
+	}
+	system("pause");
+}
+void vowel(char x)
+{
+	if(x=='a' || x=='e' || x=='i' || x=='o' || x=='u')
+	{
+		cout<<"You entered VOWEL.."<<endl;
+	}
+	else 
+	{
+	cout<<"Cosonant.."<<endl;
+	}
+}
+void no(int a)
+{
+	int b;
+	b=a+10;
+	for(int i=a;i<=b;i++)
+	{
+		cout<<i<<endl;
+	}
+}
+
+--PROGRAM 6
+
+#include<iostream>
+#include<string>
+using namespace std;
+void login(string ,string );
+main()
+{
+	string e[5],p[5];
+	for(int i=0;i<5;i++)
+{
+	cout<<"Email: ";
+	cin>>e[i];
+	cout<<"Password: ";
+	cin>>p[i];
+	login(e[i],p[i]);
+}
+	system("pause");
+	
+}
+void login(string id, string pass)
+{
+	string email[5]={"zain76035", "taimor96", "usman360", "sabeeh2", "hamza23"};
+	string password[5]={"zain", "taimor", "usman", "sabeeh", "hamza"};
+	
+
+	if(id==email[0] && pass==password[0] || id==email[1] && pass==password[1] || id==email[2] && pass==password[2] || id==email[3] && pass==password[3] || id==email[4] && pass==password[4])
+	{
+		cout<<"////////Session Created."<<endl<<endl;
+	}
+	else
+	{
+		cout<<"\\\\\\\Login failed."<<endl<<endl;
+	}
+
+}
+
