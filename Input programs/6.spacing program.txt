@@ -1,0 +1,17 @@
+#include<iostream>
+#include<iomanip>
+using namespace std;
+main()
+{
+	int a,b,c;
+	char x,y,z;
+	cout<<"Enter three Integar"<<endl;
+	cin>>a>>b>>c;
+	cout<<"Enter three Character"<<endl;
+	cin>>x>>y>>z;
+	cout<<a<<setw(7)<<x<<endl<<endl;
+	cout<<y<<setw(7)<<b<<endl;
+	cout<<setw(7)<<c<<setw(7)<<z<<endl;
+	cout<<endl<<endl<<endl;
+	system("pause");
+}

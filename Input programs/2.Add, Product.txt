@@ -1,0 +1,13 @@
+#include<iostream>
+using namespace std;
+main()
+{
+	int a,b,c,sum,product;
+	cout<<"Enter three Integars"<<endl;
+	cin>>a>>b>>c;
+	sum=a+c;
+	product=a*b*c;
+	cout<<endl;
+	cout<<"Sum is="<<sum<<endl<<"Product ="<<product<<endl;
+	system("pause");
+}

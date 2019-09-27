@@ -1,0 +1,12 @@
+#include<iostream>
+using namespace std;
+main()
+{
+	int a,b,c,x;
+	cout<<"Enter three Integars:"<<endl;
+	cin>>a>>b>>c;
+	x=a+b+c;
+	x/=3;
+	cout<<"Average value = "<<x<<endl;
+	system("pause");
+}

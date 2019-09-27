@@ -1,0 +1,13 @@
+#include<iostream>
+using namespace std;
+main()
+{
+	char a,b;
+	cout<<"Enter two Characters "<<endl;
+	cin>>a>>b;
+	a++;
+	b--;
+	cout<<"Next Value of First = "<<a<<endl;
+	cout<<"Previous Value of Second = "<<b<<endl;
+	system("pause");
+}

@@ -1,0 +1,17 @@
+#include<iostream>
+using namespace std;
+main()
+{
+	int a,b,x,y,sum,product;
+	cout<<"Enter three Integars = "<<endl;
+	cin>>a>>b>>x>>y;
+	sum=b+y;
+	sum++;
+	sum*=2;
+	product=a*x;
+	product--;
+	product/=2;
+	cout<<endl;
+	cout<<"Double of sum = "<<sum<<endl<<"Half of Previous = "<<product<<endl;
+	system("pause");
+}
