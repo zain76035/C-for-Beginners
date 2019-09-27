@@ -1,0 +1,239 @@
+//Program 1//
+#include<iostream>
+using namespace std;
+main()
+{
+	int a,b,c,sum,pro,x;
+	cout<<"Enter Three Ints:"<<endl;
+	cin>>a>>b>>c;
+	sum=a+c;
+	pro=a*b*c;
+	if(pro>=20 || pro<=50)
+	{
+		pro/=2;
+		cout<<"Half of Product is "<<pro<<endl;
+		x=sum%2;
+		if(x==0)
+		{
+			cout<<"Sum is Even"<<endl;			
+		}
+		else 
+		{
+			cout<<"Sum is Odd"<<endl;
+		}
+		
+	}
+		
+	else 
+		cout<<"Product is out of Rang"<<endl;
+		
+	
+	system("pause");
+	return 0;
+}
+
+
+
+//Program 2//
+#include<iostream>
+using namespace std;
+main()
+{
+	int a,b,sum,pro;
+	char x;
+	cout<<"Enter Two Ints :"<<endl;
+	cin>>a>>b;
+	cout<<"Enter a Character :";
+	cin>>x;
+	sum=a+b;
+	pro=a*b;
+	
+	if(pro>=10 && pro<=50 || sum>=25 && sum<=75)
+	{
+	{
+		cout<<"The Value of sum is "<<sum<<endl;
+		cout<<"The Value of Product is "<<pro<<endl;
+	}
+		if (x=='a' || x=='b' || x=='c')
+		{	
+			cout<<"You Scored ;)"<<endl;
+		}
+			else 
+			{	
+				cout<<"Try Again X("<<endl;
+			}
+	
+}
+	else
+	cout<<"Error"<<endl;
+	
+	system("pause");
+	return 0;
+}
+
+
+
+//Program 3//
+#include<iostream>
+using namespace std;
+main()
+{
+	int a,b,c,d,producta,productb,prod,remin;
+	char x;
+	cout<<"Enter Two Ints :"<<endl;
+	cin>>a>>b;
+	cout<<"Enter a Character :";
+	cin>>x;
+	producta=a*2;
+	productb=b*2;
+		
+	if(x=='a' || x=='b' || x=='c')
+	{		
+
+	
+		if(c>=10 && c<=20)
+		{
+		
+		{
+		d=c/2;
+		cout<<"Half of sum is "<<d<<endl;
+		}
+		if (c>=21 && c<=50)
+			cout<<"The Value of sum is "<<c<<endl;
+		
+		else
+			cout<<"Not in Rang..."<<endl;
+		
+		}
+	else if (x=='x' || x=='y' || x=='z')
+		{
+		prod=a*b;
+		remin=prod%2;
+			if(remin==0)
+			{
+				cout<<"Even"<<prod<<endl;
+			}
+			else
+				cout<<"Odd"<<prod<<endl;
+		}
+	}
+	
+	else
+	cout<<"Not Listed"<<endl;
+	
+	system("pause");
+	return 0;
+}
+
+
+//Program 4//
+#include<iostream>
+#include<string>
+using namespace std;
+main()
+{
+	string id;
+	string pass;	
+	cout<<"Enter ID ";
+	cin>>id;
+	cout<<"Enter Password ";
+	cin>>pass;
+	if(id=="abc@gmail.com" && pass=="iunc123")
+		
+		cout<<"Section Created"<<endl;
+		
+	else
+		cout<<"Login Failed"<<endl;
+
+	system("pause");
+	return 0;
+}
+
+
+//Program 5//
+#include<iostream>
+using namespace std;
+main()
+{	
+	char x;
+	cout<<"Enter any Character : ";
+	cin>>x;
+	switch ('x')
+	{
+		case 'a':
+		cout<<"Its Vowel"<<endl;
+		break;
+		case 'e':
+		cout<<"Its Vowel"<<endl;
+		break;
+		case 'i':
+		cout<<"Its Vowel"<<endl<<endl;
+		case 'o':
+		cout<<"Its Vowel"<<endl<<endl;
+		case 'u':
+		cout<<"Its Vowel"<<endl<<endl;
+		default:
+		cout<<"Its Consonant..."<<endl<<endl<<endl;
+	}
+
+	system("pause");
+	return 0;
+}
+
+//Program 5//
+#include<iostream>
+using namespace std;
+main()
+{	
+	int x;
+	cout<<"Enter any value: ";
+	cin>>x;
+	switch (x)
+	{
+		case 1:
+		cout<<x<<" :: You are Web Developer"<<endl;
+		break;
+		case 2:
+		cout<<x<<" :: You are Intelligent"<<endl;
+		break;
+		case 3:
+		cout<<x<<" :: You are Programmer"<<endl<<endl;
+		default:
+		cout<<"Play Again"<<endl;
+	}
+
+	system("pause");
+	return 0;
+}
+
+
+
+//Program 5//
+#include<iostream>
+using namespace std;
+main()
+{	
+	char x;
+	cout<<"Enter any Character : ";
+	cin>>x;
+	if(x=='a' || x=='b' || x=='c')
+	{
+		if(x=='a')
+		cout<<"You Scored "<<endl;
+		else
+		cout<<"List one"<<endl;
+	}
+	else if (x=='d' || x=='e' || x=='f')
+	{
+		if(x=='e')
+		cout<<"You Scored "<<endl;
+		else
+		cout<<"List two"<<endl;
+	}
+	else 
+	cout<<"Not Listed :("<<endl<<endl;
+	
+
+	system("pause");
+	return 0;
+}
