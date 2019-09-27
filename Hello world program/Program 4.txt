@@ -1,0 +1,14 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+	int a = 10;
+	char b = '1';
+	float c = 30;
+	
+	cout<<b<<"\t"<<b<<endl;
+	cout<<c<<endl;
+	cout<<a<<"\t"<<a<<"\t"<<a<<endl<<endl;
+	system("pause");
+	
+}

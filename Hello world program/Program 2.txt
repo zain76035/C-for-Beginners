@@ -1,0 +1,11 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+	cout<<"Name: Mohammad Zain"<<endl;
+	cout<<"Email:zain76035@gmail.com"<<endl;
+	cout<<"Father: Amjad ali"<<endl;
+	cout<<"Address: ---------"<<endl;
+	system("pause");
+	
+}

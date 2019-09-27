@@ -1,0 +1,23 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+	int a,b;
+	char x,y,z;
+	
+	cout<<"Enter Two Integar:";
+	cin>>a>>b;
+	cout<<endl;
+	cout<<"Enter Three Character:";
+	cin>>x>>y>>z;
+	cout<<endl;
+	cout<<x<<endl<<endl;	
+	cout<<y<<z<<endl;
+	cout<<a<<endl<<endl;
+	cout<<b<<a<<endl;
+	cout<<x<<y<<z<<endl<<endl;
+	cout<<a<<b<<endl;
+	
+	system("pause");
+	
+}
