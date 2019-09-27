@@ -1,0 +1,178 @@
+//program 01 for//
+#include<iostream>
+using namespace std;
+main()
+{
+{
+	for(int i=1;i<=10;i++)
+	cout<<"Hello World!"<<endl;
+	cout<<"Welcome to IUNC"<<endl;
+}
+	system("pause");
+}
+
+//program 01 while// 
+#include<iostream>
+using namespace std;
+main()
+{
+	int x=1;
+	while (x<=10)
+	{
+		cout<<"Hello World!"<<endl;
+		x++;
+	}
+	system("pause");
+}
+
+//Program 02 for//
+#include<iostream>
+using namespace std;
+main()
+{
+{
+	for(int i=1;i<=20;i++)
+	{
+	cout<<"#Name#"<<endl;
+	cout<<"#Father's Name#"<<endl;
+	cout<<"#Student ID#"<<endl;
+	cout<<"#Email#"<<endl;
+	cout<<"#Contact#"<<endl;
+	cout<<"#Address#"<<endl;
+	}
+}
+	system("pause");
+}
+
+
+//program 02 while//
+#include<iostream>
+using namespace std;
+main()
+{
+	int x=1;
+	while (x<=10)
+	{
+	{
+	cout<<"#Name#"<<endl;
+	cout<<"#Father's Name#"<<endl;
+	cout<<"#Student ID#"<<endl;
+	cout<<"#Email#"<<endl;
+	cout<<"#Contact#"<<endl;
+	cout<<"#Address#"<<endl;
+	}
+	x++;
+	}
+	system("pause");
+}
+
+
+//Program 03//
+#include<iostream>
+using namespace std;
+int main()
+{
+	int a,b,c,sum,dou,pro;
+{
+	cout<<"Enter Three Ints:";
+	cin>>a>>b>>c;
+	sum=a+c;
+	dou=sum*2;
+	pro=b*dou;
+	
+{
+		for(int i=1;i<=10;i++)
+	{
+		cout<<"The Value of sum is "<<sum<<endl;
+	}
+		for(int j=1;j<=15;j++)
+	{
+		cout<<"The Value of Product "<<pro<<endl;
+	}
+}
+
+}
+	system("pause");
+}
+
+
+//Program 04 for//
+#include<iostream>
+using namespace std;
+int main()
+{
+	for(int i=1;i<=10;i++)
+	{
+		cout<<i<<endl;
+	}		
+	system("pause");
+}
+
+
+//program 04 while//
+#include<iostream>
+using namespace std;
+main()
+{
+	int i=1;
+	while(i<=10)
+	{
+	cout<<i<<endl;
+	i++;
+	}
+
+	system("pause");
+}
+
+//Program 07 for//
+#include<iostream>
+using namespace std;
+int main()
+{
+	for(int i=29;i>=1;i-=2)
+	{
+		cout<<i<<endl;
+	}		
+	system("pause");
+}
+
+//program 07 while//
+#include<iostream>
+using namespace std;
+main()
+{
+	int i=29;
+	while(i>=1)
+	{
+	cout<<i<<endl;
+	i-=2;
+	}
+
+	system("pause");
+}
+
+//Program 08 for//
+#include<iostream>
+using namespace std;
+int main()
+{
+	char a;
+	int b,dou,p,s;
+	cout<<"ENter Character =";
+	cin>>a;
+	cout<<"Enter an Ints =";
+	cin>>b;
+	p=b+1;
+	s=b-1;
+	dou=b*2;
+	if(a=='a' || a=='b' || a=='c' || a=='d')
+	{
+		for(int i=1;i<=10;i++)
+		{
+			cout<<"The Double of Ints is "<<dou<<endl;
+			cout<<"Next Value "<<p<<endl;
+			cout<<"Previous Value "<<s<<endl;
+		}
+	}		
+	system("pause");
+}
