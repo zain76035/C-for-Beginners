@@ -1,0 +1,152 @@
+//Calculator
+#include<iostream>
+using namespace std;
+int sum(float ,float );
+int sub(float ,float );
+int mul(float ,float );
+int divi(float ,float );
+main()
+{
+	float a,b;
+	int x;
+	char c;
+	cout<<"Value - Oprator - Value"<<endl;
+	cin>>a;
+	cin>>c;
+	cin>>b;
+	cout<<endl;
+	if(c=='+')
+	{
+		x=sum(a,b);
+		cout<<"Sum is = "<<x<<endl<<endl;
+	}
+	else if(c=='-')
+	{
+		x=sub(a,b);
+		cout<<"Sub is = "<<x<<endl<<endl;
+	}
+	else if(c=='*')
+	{
+		x=mul(a,b);
+		cout<<"Multiply is = "<<x<<endl<<endl;
+	}
+	else if(c=='/')
+	{
+		x=divi(a,b);
+		cout<<"Divide is = "<<x<<endl<<endl;
+	}
+	else 
+	{
+		cout<<"/////////////Incorrect/////////////"<<endl;
+	}
+	system("pause");
+}
+
+int sum(float a,float b)
+{
+	int s;
+	s=a+b;
+	return s;
+}
+int sub(float a,float b)
+{
+	int s;
+	s=a-b;
+	return s;
+}
+int mul(float a,float b)
+{
+	int s;
+	s=a*b;
+	return s;
+}
+int divi(float a,float b)
+{
+	int s;
+	s=a/b;
+	return s;
+}
+
+
+
+//Converter
+#include<iostream>
+using namespace std;
+int celsius(float );
+int fahrenhait(float );
+int dollar(int );
+int day(int );
+main()
+{
+	int a,w,x,y,z;
+	float c;
+	
+	cout<<"=> 1 Temperature Celsius to Fahrenhait:"<<endl;
+	cout<<"=> 2 Temperature Fahrenhait to Celsius:"<<endl;
+	cout<<"=> 3 Dollar to Pak Ruppee:"<<endl;
+	cout<<"=> 4 Day to Seconds:"<<endl;
+	
+	cin>>a;
+	if(a==1)
+	{
+		cout<<"Temperature Value in Celsius: ";
+		cin>>c;
+		x=celsius(c);
+		cout<<"Temperature in Fahrenhait: "<<x<<endl;
+	}
+	else if(a==2)
+	{
+		cout<<"Temperature Value in Fahrenhait: ";
+		cin>>c;
+		y=fahrenhait(c);
+		cout<<"Temperature in Celsius: "<<y<<endl;
+	}
+	
+	else if(a==3)
+	{
+		cout<<"Amount in Dollar: $";
+		cin>>c;
+		z=dollar(c);
+		cout<<"Amount in Pak ruppee is Rs:"<<z<<endl;
+	}
+	
+	else if(a==4)
+	{
+		cout<<"Days: ";
+		cin>>c;
+		w=day(c);
+		cout<<"In Seconds: "<<w<<" sec"<<endl;
+	}
+	else
+	{
+		cout<<"//////////////Not Found//////////////"<<endl<<endl;
+	}
+}
+
+int celsius(float c)
+{
+	float f;
+	f=(c * 9.0 ) / 5.0 + 32;
+	return f;
+}
+
+int fahrenhait(float f)
+{
+	float c;
+	c=( f - 32 ) * 5 / 9;
+	return c;
+}
+
+int dollar(int d)
+{
+	int p;
+	p=d*137;
+	return p;	
+}
+
+int day(int d)
+{
+	int s;
+	s=d*86400;
+	return s;
+}

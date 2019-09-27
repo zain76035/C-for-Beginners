@@ -1,0 +1,181 @@
+//program #1
+#include<iostream>
+using namespace std;
+void check(float ,char ,int );
+main()
+{
+	int a,b=10;
+	float x,y=3.5;
+	char c,d='x';
+	cout<<"Enter a float , Character ,Int"<<endl;
+	cin>>x>>c>>a;
+	check(y,d,b);
+	check(x,c,a);
+	system("pause");
+}
+
+void check(float a,char b,int c)
+{
+	float x;
+	int d;
+	x=a+2;
+	b++;
+	d=c/2;
+	cout<<"Double of Float is "<<x<<endl;
+	cout<<"Next of Character is "<<b<<endl;
+	cout<<"half of Int is "<<d<<endl;	
+}
+
+
+//program #2 
+#include<iostream>
+using namespace std;
+int sum(int ,int );
+main()
+{
+	int x=5,y=6,a,b,z;
+	cout<<"Enter 2 Ints "<<endl;
+	cin>>a>>b;
+	z=sum(x,y);
+	cout<<"Sum is "<<z<<endl;
+	z=sum(a,b);
+	cout<<"Sum is "<<z<<endl;
+	z=sum(10,100);
+	cout<<"Sum is "<<z<<endl;
+	system("pause");
+}
+
+int sum(int a,int b)
+{
+	int c;
+	c=a+b;
+	return c;
+}
+
+
+
+//program # 3
+#include<iostream>
+using namespace std;
+int product(int a,int b);
+int dou(int a);
+main()
+{
+	int a,b,c,x;
+	cout<<"Enter 3 ints"<<endl;
+	cin>>a>>b>>c;
+	x = product(a,c);
+	cout<<"Product of 1st n 3rd "<<x<<endl;
+	x = dou(b);
+	cout<<"Double of 2nd "<<x<<endl;
+	
+	system("pause");
+}
+
+int product(int a,int b)
+{
+	int c;
+	c=a*b;
+	return c;
+}
+
+int dou(int a)
+{
+	int d;
+	d=a*2;
+	return d;
+}
+
+
+//program # 4
+#include<iostream>
+using namespace std;
+int check(char );
+main()
+{
+	char x;
+	int y;
+	cout<<"Enter Character ";
+	cin>>x;
+	y=check(x);
+	if(y==1)
+	{
+		cout<<"Vowel"<<endl;	
+	}	
+	else 
+	cout<<"Consonant"<<endl;
+}
+
+int check(char a)
+{
+	if(a=='a' || a=='e' || a=='i' || a=='o' || a=='u' )
+	return 1;
+	else 
+	return 2;
+}
+
+
+//program # 5
+#include<iostream>
+#include<string>
+using namespace std;
+int login(string ,string );
+main()
+{
+	string e[5],p[5];
+	int a;
+	for(int i=0;i<5;i++)
+	{
+		cout<<"Email : ";
+		cin>>e[i];
+		cout<<"Password : ";
+		cin>>p[i];
+		a = login(e[i],p[i]);
+		
+		if(a==1)
+		
+		cout<<"//////////////////////Session Created//////////////////////"<<endl;	
+			
+		else 
+		cout<<"**********************Login Failed*************************"<<endl;
+	}
+	
+}
+
+int login(string a,string b)
+{
+	string id[5]={"zain760","usman360","sabeeh2","taimor96","hamza23"};
+	string pass[5]={"zain","usman","sabeeh","taimor","hamza"};
+	if (a==id[0] && b==pass[0] || a==id[1] && b==pass[1] || a==id[2] && b==pass[2] || a==id[3] && b==pass[3] || a==id[4] && b==pass[4])
+	return 1;
+	else 
+	return 0;
+}
+
+
+//program # 6
+#include<iostream>
+using namespace std;
+int value(int a,int b);
+main()
+{
+	int a[5],b[5],x;
+	for(int i=0;i<5;i++)
+	{
+		cout<<"Enter two values"<<endl;
+		cin>>a[i]>>b[i];
+		x=value(a[i],b[i]);
+		cout<<"Sum is "<<x<<endl;
+	}
+	system("pause");
+}
+
+int value(int a,int b)
+{
+	int s;
+	s=a+b;
+	return s;
+}
+
+
+
